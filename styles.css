@@ -1,0 +1,116 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            height: fit-content;
+        }
+        .colspan td{
+            text-align: center !important;
+        }
+
+        .invoice-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-image: url("https://img.freepik.com/premium-vector/orange-wave-background-abstract_998164-41.jpg?w=826");
+            background-repeat: repeat;
+            background-size: contain;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 50px;
+        }
+        .header{
+            background-image: url("https://images.unsplash.com/photo-1556139943-4bdca53adf1e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: right;
+            padding: 8px 0px;
+        }
+
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;  
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+        .bill-details{
+            background-image: url("https://media.istockphoto.com/id/1157662204/photo/table-top-view-of-wood-texture-in-white-light-natural-color-background-grey-clean-grain.jpg?s=1024x1024&w=is&k=20&c=k1nc5McimFg9nwOqg9vK2e9v6TttssKJoTvU0KfhS7k=");
+            margin-top: -17px;
+            border: none !important;
+        }
+
+        .bill-details, .items, .total {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .bill-details table, .items table, .total table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .bill-details td, .items th, .items td, .total td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .bill-details td{
+            border: 2px solid #e7e2e2 ;
+        }
+
+        .items th, .total tr:nth-child(1) {
+            background-color: #91afe1;
+        }
+        .items tbody tr:nth-child(odd), .total tr:nth-child(even) {
+            background-color: #f4f4f4;
+            
+          }
+
+        .items th, .items td {
+            text-align: center;
+        }
+
+        .total td {
+            font-weight: bold;
+        }
+
+        .total td:last-child {
+            text-align: right;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .invoice-container {
+                border: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: -22px;
+                width: 100%;
+                text-align: center;
+                background-color: #fff;
+                padding: 8px 0;         
+            }
+              
+        }
